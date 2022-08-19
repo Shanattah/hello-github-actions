@@ -7,8 +7,10 @@ on:
 
 jobs:
   say_hi:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        name: Checking out our code
 
+      - name: Checking that Luis is not cheating
+        run: "ls -l"
