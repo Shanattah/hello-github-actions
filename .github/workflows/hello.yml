@@ -9,5 +9,6 @@ jobs:
   say_hi:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      name: Checking out our code
+      - name: Checkout
+        uses: actions/checkout@v3
+
